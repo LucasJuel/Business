@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+<div class="header">
+    <div class="header-box">
+      <p class="p-header">Om mig</p>
+      <a class="p-header" onClick="scrollInto()">Kontakt mig</a>
+      <div class="dropdown">
+        <div class="drop-text">
+          <button class="dropbtn">Services</button>
+          <i class="fa fa-chevron-down"></i>
+        </div>
+        <div class="dropdown-content">
+          <a href="gennemgang.html">Gennemgang af tekst</a>
+          <a href="transkribering.html">Transkribering</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="fullCol"></div>
+    <div class="fullCol"></div>
+    <div class="fullCol"></div>
+    <h1 class="h1-text">Velkommen til Afklar</h1>
+    <!-- <div class="sub">
+      <h1 class="h1-text">Abonner til mit nyhedsbrev</h1>
+      <button class="sub-btn">Tryk</button>
+    </div> -->
+    <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
+  </div>
+
+  <div class="gram-proof">
+    <div class="gram-box">
+      <h1 class="gram title">Transkribering</h1>
+      <div style="background-color: #008080; width: 250px; height: 10px "></div>
+      <p class="gram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
+      <button class="gram-btn" onClick="location.href='transkribering.html'">Læs mere</button>
+    </div>
+    <div class="gram-box">
+      <h1 class="gram title">Gennemgang af tekst</h1>
+      <div style="background-color: #008080; width: 350px; height: 10px "></div>
+      <p class="gram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
+      <button class="gram-btn" onClick="location.href='gennemgang.html'">Læs mere</button>
+    </div>
+  </div>
+  <div class="contact-stay" id="contact-stay">
+    <div style="width:100%; height:10px; background-color: gray; border-radius: 5px 5px 0px 0px;" onClick="toggle()"></div>
+    <div style="margin-bottom: 20px;">Nyhedsbrev!</div>
+    <input style="width: 80%" value="email">
+    <button>hej</button>
+  </div>
+  
+  <!--Kontakt mig felt-->
+  <div class="kontakt-proof" >
+    <div class="kontakt-box" id="scroll-to">
+      <h1 class="kontakt title">Kontakt mig</h1>
+      <div style="background-color: #008080; width: 250px; height: 10px "></div>
+      <!-- <p class="gram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus cras adipiscing enim eu turpis egestas pretium aenean.</p> -->
+      <p class="gram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <ul class="kontakt-ul">
+        <li class="kontakt-li">E-mail</li>
+        <li class="kontakt-li">Telefon</li>
+      </ul>
+    </div>
+  </div>
+  <!--Om mig felt-->
+  <div class="kontakt-proof">
+    <div class="about-box">
+      <h1 class="kontakt title">Om afklar.dk</h1>
+      <div style="background-color: #008080; width: 250px; height: 10px "></div>
+      <p class="gram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
+      <button class="gram-btn" href="">Læs mere</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-div">
+      <h3 style="font-family: DoppioOne;">Sider</h3>
+      <li><a href="gennemgang.html">Gennemgang af tekst</a></li>
+      <li><a href="transkribering.html">Transkribering</a></li>
+      <li><a href="#">Om afklar.dk</a></li>
+    </div>
+    <div class="footer-div">
+      <h3 style="font-family: DoppioOne;">Artikler</h3>
+      <li><a href="#">Artikel 1</a></li>
+      <li><a href="#">Artikel 2</a></li>
+      <li><a href="#">Artikel 3</a></li>
+    </div>
+    <div class="footer-div">
+      <h3 style="font-family: DoppioOne;">Kontakt</h3>
+      <li><a href="#">Send en e-mail!</a></li>
+      <li><a href="#">Telefon: **********</a></li>
+      <p>All rights reserved. Afklar.dk ©</p>
+    </div>
+
+    </p>
+  </footer>
+</body>
+</html>
