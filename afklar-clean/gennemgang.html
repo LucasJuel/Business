@@ -103,7 +103,7 @@
     </div>
 
     <div class="send-mail">
-      <form action="">
+      <form action="" id="request">
         <div class="wrap-names">
           <div class="name wrapper">
             <label for="">Name</label>
@@ -118,7 +118,7 @@
         <div class="wrap-detail">
           <div class="phone wrapper">
             <label for="">Telefon</label>
-            <input type="text" placeholder="John" />
+            <input type="tel" placeholder="Telefon nummer" pattern="[0-9]{8}"/>
           </div>
 
           <div class="email wrapper">
@@ -127,8 +127,19 @@
           </div>
         </div>
 
+        <div class="wrap-info">
+          
+        </div>
+
         <div class="desc wrapper">
           <label for="">Beskrivelse</label>
+          <input type="number" placeholder="CVR-Nummer" style="margin: 18px 0 18px 0">
+          <select id="pakke" form="request">
+            <option value="" disabled selected hidden>Vælg en pakke!</option>
+            <option value="Gennemgang">Gennemgang</option>
+            <option value="Gennemgang+Revision">Gennemgang og Revision</option>
+            <option value="forfatning">Fortfatning af tekst</option>
+          </select>
           <textarea
             type="text"
             placeholder="John"
@@ -137,7 +148,7 @@
             class="desc-input"
           ></textarea>
         </div>
-        <button class="wrapper">send</button>
+        <button class="wrapper">Send</button>
       </form>
     </div>
 
