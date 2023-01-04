@@ -2,6 +2,7 @@
   font-family: DoppioOne;
   src: url(../fonts/DoppioOne-Regular.ttf);
 }
+
 a {
   color: black;
   text-decoration: none;
@@ -75,143 +76,6 @@ body {
   text-shadow: 8px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.sub {
-  position: absolute;
-  top: 1200px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.sub-btn {
-  border: solid 2px #639560;
-  border-radius: 7px;
-  transform: scale(1.8) translateY(250px) translateX(280px);
-  color: black;
-  background-color: white;
-}
-
-.gram-text {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  line-height: 1.6;
-  width: 600px;
-}
-
-.gram-box {
-  background-color: white;
-  width: 700px;
-  position: absolute;
-  margin-left: 14vw;
-  top: 700px;
-  height: 310px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
-  transform: rotate(3deg);
-}
-
-.gram-box:nth-child(2) {
-  transform: rotate(-4deg) translateX(500px) translateY(300px);
-}
-
-.kontakt-box {
-  background-color: white;
-  width: 700px;
-  position: absolute;
-  top: 1800px;
-  height: 310px;
-  padding: 20px;
-  transform: translateX(200px);
-  border-radius: 10px;
-  box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
-}
-
-.about-box {
-  background-color: white;
-  width: 700px;
-  position: absolute;
-  top: 2000px;
-  height: 310px;
-  padding: 20px;
-  transform: translateX(800px);
-  border-radius: 10px;
-  box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
-}
-
-.title {
-  font-family: DoppioOne;
-  margin-bottom: 2px;
-}
-.gram-btn {
-  border: solid 2px #639560;
-  border-radius: 7px;
-  transform: scale(1.8) translateY(40px) translateX(15px);
-  color: black;
-  background-color: white;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: 0.4s;
-}
-
-.gram-btn:hover {
-  cursor: pointer;
-  transform: scale(1.88) translateY(40px) translateX(15px);
-}
-
-.sub-btn:hover {
-  cursor: pointer;
-}
-
-.kontakt-li {
-  margin-top: 25px;
-  font-family: DoppioOne;
-}
-
-.contact-stay {
-  position: fixed;
-  bottom: 0px;
-  background-color: white;
-  font-family: DoppioOne;
-  text-align: center;
-  height: 30px;
-  width: 15%;
-  right: 10px;
-  z-index: 10;
-  border-radius: 5px 5px 0px 0px;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-duration: 0.8s;
-}
-
-.contact-stay:hover {
-  height: 35px;
-  cursor: pointer;
-}
-
-.opened {
-  position: fixed;
-  bottom: 0px;
-  background-color: white;
-  font-family: DoppioOne;
-  text-align: center;
-  height: 160px;
-  width: 40%;
-  right: 10px;
-  z-index: 10;
-  border-radius: 5px 5px 0px 0px;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: 0.8s;
-}
-
-.opened:hover {
-  cursor: pointer;
-}
-
 .dropbtn {
   background-color: white;
   color: black;
@@ -271,6 +135,58 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/*2 bokse øverst*/
+.gram-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  width: calc(100% - 50px);
+}
+
+.gram-pack{
+    position: absolute;
+    top: 700px;
+    width: 60vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.gram-box {
+    padding: 18px;
+    height: 25vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1s;
+}
+
+.title {
+  font-family: DoppioOne;
+  margin-bottom: 2px;
+}
+
+/*Information om transkribering*/
+.trans-info{
+  position: absolute;
+  top: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.info-obj{
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .footer {
