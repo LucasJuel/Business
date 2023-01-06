@@ -57,6 +57,7 @@ a {
 
 body {
   margin: 0;
+  background-color: whitesmoke;
 }
 
 .body {
@@ -173,22 +174,36 @@ body {
 /*Information om transkribering*/
 .trans-info{
   position: absolute;
-  top: 1100px;
+  top: 1500px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px;
+  column-gap: 200px;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
 .info-obj{
-  height: 300px;
-  width: 300px;
-  background-color: red;
-  margin: 10px;
+  height: 600px;
+  width: 400px;
+  background-color: white;
+  padding: 18px;
   border-radius: 10px;
+  box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
 }
 
+/*rotation*/
+
+.info-obj:nth-child(1){
+  transform: rotate(-4deg);
+}
+.info-obj:nth-child(2){
+  transform: rotate(3deg);
+}
+.info-obj:nth-child(3){
+  transform: rotate(-1deg);
+}
 .footer {
   height: 200px;
   background-color: #639560;

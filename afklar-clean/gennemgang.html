@@ -103,27 +103,27 @@
     </div>
 
     <div class="send-mail">
-      <form action="" id="request">
+      <form action="./php/mail_service.php" id="request" method="POST">
         <div class="wrap-names">
           <div class="name wrapper">
             <label for="">Name</label>
-            <input type="text" placeholder="Anders" required/>
+            <input type="text" name="name" placeholder="Anders" required/>
           </div>
           <div class="surname wrapper">
             <label for="">Efternavn</label>
-            <input type="text" placeholder="Hansen" required/>
+            <input type="text" placeholder="Hansen" />
           </div>
         </div>
 
         <div class="wrap-detail">
           <div class="phone wrapper">
             <label for="">Telefon</label>
-            <input type="tel" placeholder="Telefon nummer" pattern="[0-9]{8}" required/>
+            <input type="tel" placeholder="Telefon nummer" pattern="[0-9]{8}" />
           </div>
 
           <div class="email wrapper">
             <label for="">Email</label>
-            <input type="email" placeholder="ditnavn@dinemail.dk" required/>
+            <input type="email" placeholder="ditnavn@dinemail.dk" />
           </div>
         </div>
 
@@ -134,7 +134,7 @@
         <div class="desc wrapper">
           <label for="">Beskrivelse</label>
           <input type="number" placeholder="CVR-Nummer" style="margin: 18px 0 18px 0">
-          <select id="pakke" form="request" required>
+          <select id="pakke" form="request" >
             <option value="" disabled selected hidden>Vælg en pakke!</option>
             <option value="Gennemgang">Gennemgang</option>
             <option value="Gennemgang+Revision">Gennemgang og Revision</option>
@@ -146,7 +146,7 @@
             cols="100"
             rows="10"
             class="desc-input"
-            required
+            
           ></textarea>
         <button class="wrapper knap">Send</button>
         </div>
