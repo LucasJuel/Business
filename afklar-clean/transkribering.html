@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style-trans.css">
+    <script src="https://kit.fontawesome.com/429e30093e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="mobile();">
     
-<div class="header">
+<div class="header" id="header-pc">
     <div class="header-box">
       <a href="index.html" class="p-header">Hjem</a>
       <p class="p-header">Om mig</p>
@@ -28,7 +29,16 @@
       </div>
     </div>
   </div>
+  <div class="header-mobile" id="header-mobile">
+    <i class="fa-solid fa-bars fa-2x menu-icon"></i>
+    <div class="drop-mobile">
+      <a href="">Hjem</a>
+      <a href="">Om mig</a>
+
+    </div>
+  </div>
   <div class="body">
+    <div class="fullCol"></div>
     <div class="fullCol"></div>
     <div class="fullCol"></div>
     <div class="fullCol"></div>
@@ -38,7 +48,7 @@
   <div class="gram-pack">
       <div class="gram-box">
         <h1 class="gram title">Hvad er transkribering?</h1>
-        <div style="background-color: #639560; width: 350px; height: 10px"></div>
+        <div style="background-color: #639560; width: 450px; height: 10px"></div>
         <p class="gram-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus
@@ -50,20 +60,89 @@
   <div class="trans-info">
     <div class="info-obj">
       <h1 class="title">Trans 1</h1>
-      <p></p>
+      <p class="gram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus
+        cras adipiscing enim eu turpis egestas pretium aenean.</p>
     </div>
     <div class="info-obj">
       <h1 class="title">Trans 2</h1>
-      <p></p>
+      <p class="gram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus
+        cras adipiscing enim eu turpis egestas pretium aenean.</p>
     </div>
     <div class="info-obj">
       <h1 class="title">Trans 3</h1>
-      <p></p>
+      <p class="gram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus
+        cras adipiscing enim eu turpis egestas pretium aenean.</p>
     </div>
   </div>
 
-  <footer class="footer">
+  <div class="send-mail">
+    <form action="./php/mail_service.php" id="request" method="POST">
+      <div class="wrap-names">
+        <div class="name wrapper">
+          <label for="">Name</label>
+          <input type="text" name="name" placeholder="Anders" required/>
+        </div>
+        <div class="surname wrapper">
+          <label for="">Efternavn</label>
+          <input type="text" placeholder="Hansen" />
+        </div>
+      </div>
 
+      <div class="wrap-detail">
+        <div class="phone wrapper">
+          <label for="">Telefon</label>
+          <input type="tel" placeholder="Telefon nummer" pattern="[0-9]{8}" />
+        </div>
+
+        <div class="email wrapper">
+          <label for="">Email</label>
+          <input type="email" placeholder="ditnavn@dinemail.dk" />
+        </div>
+      </div>
+      <div class="desc wrapper">
+        <label for="">Beskrivelse</label>
+        <input type="number" placeholder="CVR-Nummer" style="margin: 18px 0 18px 0">
+        <select id="pakke" form="request" >
+          <option value="" disabled selected hidden>Vælg en pakke!</option>
+          <option value="Gennemgang">Trans1</option>
+          <option value="Gennemgang+Revision">Trans2</option>
+          <option value="forfatning">Trans3</option>
+        </select>
+        <textarea
+          type="text"
+          placeholder="Giv en beskrivelse af din henvendelse"
+          cols="100"
+          rows="10"
+          class="desc-input"
+          
+        ></textarea>
+      <button class="wrapper knap">Send</button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-div">
+      <h3 style="font-family: DoppioOne">Sider</h3>
+      <li><a href="gennemgang.html">Gennemgang af tekst</a></li>
+      <li><a href="transkribering.html">Transkribering</a></li>
+      <li><a href="#">Om afklar.dk</a></li>
+    </div>
+    <div class="footer-div">
+      <h3 style="font-family: DoppioOne">Artikler</h3>
+      <li><a href="#">Artikel 1</a></li>
+      <li><a href="#">Artikel 2</a></li>
+      <li><a href="#">Artikel 3</a></li>
+    </div>
+    <div class="footer-div">
+      <h3 style="font-family: DoppioOne">Kontakt</h3>
+      <li><a href="#">Send en e-mail!</a></li>
+      <li><a href="#">Telefon: **********</a></li>
+      <p>All rights reserved. Afklar.dk ©</p>
+    </div>
   </footer>
   
   

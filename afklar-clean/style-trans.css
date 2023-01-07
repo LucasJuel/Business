@@ -50,6 +50,13 @@ a {
 
 .fullCol:nth-child(3) {
   background-color: #639560;
+  transform: rotate(2deg) scaleX(1.1) scaleY(0.6) translateY(200px);
+  position: relative;
+  z-index: -10;
+}
+
+.fullCol:nth-child(4) {
+  background-color: #639560;
   transform: rotate(deg) scaleX(1.1) scaleY(0.6) translateY(200px);
   position: relative;
   z-index: -10;
@@ -57,12 +64,13 @@ a {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background-color: whitesmoke;
 }
 
 .body {
   overflow: hidden;
-  height: 2500px;
+  height: 3000px;
 }
 
 .h1-text {
@@ -78,7 +86,7 @@ body {
 }
 
 .dropbtn {
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
   padding: 16px;
   font-size: 16px;
@@ -156,7 +164,7 @@ body {
 
 .gram-box {
     padding: 18px;
-    height: 25vw;
+    height: 35vh;
     background-color: white;
     border-radius: 10px;
     box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
@@ -168,29 +176,34 @@ body {
 
 .title {
   font-family: DoppioOne;
+  font-size: 2vw;
   margin-bottom: 2px;
 }
 
 /*Information om transkribering*/
 .trans-info{
   position: absolute;
-  top: 1500px;
+  top: 1300px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 200px;
+  column-gap: 7vw;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
 .info-obj{
-  height: 600px;
-  width: 400px;
+  height: 30vw;
+  width: 20vw;
   background-color: white;
   padding: 18px;
   border-radius: 10px;
   box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
+}
+
+.info-obj .gram-text{
+  font-size: 1.5vw
 }
 
 /*rotation*/
@@ -213,8 +226,189 @@ body {
   -moz-box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
 }
 
+/*Formular*/
+.send-mail {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 2100px;
+}
+
+.wrapper {
+  font-family: DoppioOne;
+  padding: 20px;
+  margin: 9px;
+  border-radius: 10px;
+  background-color: white;
+  z-index: 30;
+  box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
+}
+
+.name {
+  float: left;
+}
+
+
+.surname {
+  float: left;
+}
+
+.surname.wrapper{
+  width: 250px;
+}
+
+.phone {
+  float: left;
+}
+
+.email {
+  width: 350px;
+}
+
+.email input{
+  width: 250px;
+}
+
+.wrapper label{
+  display:block;
+}
+
+div.email.wrapper{
+  display: block;
+  align-items: center;
+}
+
+.wrap-names div {
+  width: 250px;
+}
+
+.phone.wrapper{
+  width: 250px;
+}
+
+.wrapper label {
+  margin-right: 18px;
+}
+
+.wrapper input {
+  margin-top: 18px;
+  margin-right: 18px;
+}
+
+.wrap-detail {
+  float: left;
+  display: flex;
+}
+
+.desc {
+  float: left;
+  margin-right: 18px
+}
+
+.desc.wrapper label {
+  display: block;
+}
+
+.desc textarea {
+  margin-top: 10px;
+}
+
+.wrapper.knap{
+  float: right;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 0.8s;
+}
+.wrapper.knap:hover{
+  cursor: pointer;
+  transform: scale(105%);
+}
+
+/*Footer*/
+.footer {
+  height: 200px;
+  background-color: #639560;
+  padding-top: 50px;
+  box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
+  -webkit-box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
+  -moz-box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+}
+.footer-div {
+  margin: 20px 200px 0px 200px;
+  font-family: DoppioOne;
+  width: 100%;
+}
+
+.footer-div:nth-child(1) {
+  grid-column: 1;
+}
+.footer-div:nth-child(2) {
+  grid-column: 2;
+}
+.footer-div:nth-child(3) {
+  grid-column: 3;
+}
+
+.footer-div li {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 900px) {
-  body {
-    background-color: red;
+  .h1-text{
+    viewport-fit: contain;
   }
+
+
+
+  .title{
+    font-size: 4vw;
+  }
+
+  .gram-text{
+    font-size: 3vw;
+  }
+
+  .gram-box{
+    height: 60vw;
+  }
+
+  .gram-pack{
+    width: 100%;
+  }
+
+  .trans-info{
+    display: inline-block;
+    width: 100%;
+  }
+  .info-obj{
+    margin-bottom: -8px;
+    height: 40vh;
+    width: 100%;
+    transform: rotate(0) !important;
+    overflow: hidden;
+  }
+  .info-obj .gram-text{
+    font-size: 3.2vw
+  }
+
+  .header-mobile{
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .menu-icon{
+    size: 50px;
+    transition: 0.4s;
+  
+  }
+
+  .menu-icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
 }
