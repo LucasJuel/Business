@@ -34,7 +34,7 @@ a {
 
 .fullCol {
   height: 700px;
-  background-color: #639560;
+  background-color: #ec6e00;
   transform: rotate(-6deg) scaleX(1.1) scaleY(0.6);
   box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
@@ -42,21 +42,18 @@ a {
 }
 
 .fullCol:nth-child(2) {
-  background-color: #639560;
   transform: rotate(2deg) scaleX(1.1) scaleY(0.6) translateY(-200px);
   position: relative;
   z-index: -10;
 }
 
 .fullCol:nth-child(3) {
-  background-color: #639560;
   transform: rotate(2deg) scaleX(1.1) scaleY(0.6) translateY(200px);
   position: relative;
   z-index: -10;
 }
 
 .fullCol:nth-child(4) {
-  background-color: #639560;
   transform: rotate(deg) scaleX(1.1) scaleY(0.6) translateY(200px);
   position: relative;
   z-index: -10;
@@ -328,7 +325,7 @@ div.email.wrapper{
 /*Footer*/
 .footer {
   height: 200px;
-  background-color: #639560;
+  background-color: #ec6e00;
   padding-top: 50px;
   box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
   -webkit-box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
@@ -337,10 +334,20 @@ div.email.wrapper{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100%;
 }
+.footer {
+  height: 250px;
+  background-color: #ec6e00;
+  padding-top: 50px;
+  box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
+  -webkit-box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
+  -moz-box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .footer-div {
-  margin: 20px 200px 0px 200px;
   font-family: DoppioOne;
-  width: 100%;
+  text-align: center;
 }
 
 .footer-div:nth-child(1) {
@@ -352,9 +359,33 @@ div.email.wrapper{
 .footer-div:nth-child(3) {
   grid-column: 3;
 }
+.footer-div:nth-child(4) {
+  grid-column: 4;
+}
 
 .footer-div li {
   margin-bottom: 10px;
+}
+
+.social-icons{
+  display: grid;
+  grid-template-columns: 20px 20px;
+  column-gap: 18px;
+  justify-content: center;
+}
+
+.footer-div.conds a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.footer-div.conds a:hover {
+  cursor: pointer;
+}
+
+.social-icons i:hover{
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {
