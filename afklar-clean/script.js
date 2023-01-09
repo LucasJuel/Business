@@ -15,6 +15,10 @@ function changeSite(){
     window.location.href = './index.html#scroll-to';
 }
 
+function formula(){
+    window.location.href = './gennemgang.html#request';
+}
+
 function aboutMe(){
     window.location.href = './about-me.html';
 }

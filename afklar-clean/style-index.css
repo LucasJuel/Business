@@ -8,14 +8,14 @@ a {
 }
 .header {
   width: 100%;
-  height: 60px;
+  height: 10vh;
 }
 
 .header-box {
   text-align: center;
 }
 .p-header {
-  margin: 20px;
+  margin: 2em;
   text-transform: uppercase;
   font-family: DoppioOne;
   display: inline-block;
@@ -32,7 +32,7 @@ a {
 }
 
 .fullCol {
-  height: 700px;
+  height: 40vw;
   background-color: #008080;
   transform: rotate(6deg) scaleX(1.1) scaleY(0.6);
   box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
@@ -42,14 +42,14 @@ a {
 
 .fullCol:nth-child(2) {
   background-color: #008080;
-  transform: rotate(-8deg) scaleX(1.1) scaleY(0.6) translateY(-200px);
+  transform: rotate(-8deg) scaleX(1.1) scaleY(0.6) translateY(-8.75vw);
   position: relative;
   z-index: -10;
 }
 
 .fullCol:nth-child(3) {
   background-color: #008080;
-  transform: rotate(3deg) scaleX(1.1) scaleY(0.6) translateY(200px);
+  transform: rotate(3deg) scaleX(1.1) scaleY(0.6) translateY(8.75vw);
   position: relative;
   z-index: -10;
 }
@@ -62,18 +62,17 @@ body {
 
 .body {
   overflow: hidden;
-  height: 2500px;
+  height: 143vw;
 }
 
 .h1-text {
-  font-size: 50px;
+  font-size: 2.5vw;
   font-family: DoppioOne;
   text-transform: uppercase;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 350px;
+  top: 22vw;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.1em solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -103,46 +102,40 @@ body {
   }
 }
 
-.sub {
-  position: absolute;
-  top: 1200px;
+.p-text {
+  font-size: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 28vw;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.sub-btn {
-  border: solid 2px #008080;
-  border-radius: 7px;
-  transform: scale(1.8) translateY(250px) translateX(280px);
-  color: black;
-  background-color: white;
+  position: absolute;
+  text-align: center;
 }
 
 .gram-text {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 0.9vw;
   line-height: 1.6;
-  width: 600px;
+  width: 34vw;
 }
 
 .about-box ul li:not(:last-child){
-  margin-bottom: 10px;
+  margin-bottom: 0.6vw;
 }
 
 .about-box ul li {
-  font-size: 16px;
+  font-size: 0.9vw;
   font-family: DoppioOne;
 }
 
 .gram-box {
   background-color: white;
-  width: 700px;
+  width: 42vw;
   position: absolute;
   margin-left: 14vw;
-  top: 700px;
-  height: 370px;
-  padding: 20px;
+  top: 40vw;
+  height:auto;
+  padding: 2vw;
   border-radius: 10px;
   box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
@@ -151,17 +144,17 @@ body {
 }
 
 .gram-box:nth-child(2) {
-  transform: rotate(-4deg) translateX(500px) translateY(300px);
+  transform: rotate(-4deg) translateX(28vw) translateY(17vw);
 }
 
 .kontakt-box {
   background-color: white;
-  width: 700px;
+  width: 40vw;
   position: absolute;
-  top: 1800px;
-  height: 360px;
-  padding: 20px;
-  transform: translateX(200px);
+  top: 98vw;
+  height: auto;
+  padding: 2vw;
+  transform: translateX(8vw);
   border-radius: 10px;
   box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
@@ -170,37 +163,31 @@ body {
 
 .about-box {
   background-color: white;
-  width: 760px;
+  width: 43vw;
   position: absolute;
-  top: 2000px;
-  height: 310px;
-  padding: 20px;
-  transform: translateX(900px);
+  top: 110vw;
+  height: auto;
+  padding: 2vw;
+  transform: translateX(47vw);
   border-radius: 10px;
   box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
 }
 
-.p-text {
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 450px;
-  text-align: center;
-}
-
 .title {
   font-family: DoppioOne;
+  font-size: 1.7vw;
   margin-bottom: 2px;
 }
+
 .gram-btn {
   border: solid 2px #008080;
-  border-radius: 7px;
-  transform: scale(1.8) translateY(20px) translateX(15px);
+  border-radius: 0.4vw;
+  font-size: 1vw;
+  transform: translateY(15px);
+  width: 8vw;
+  height: 2.5vw;
   color: black;
   background-color: white;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -209,7 +196,7 @@ body {
 
 .gram-btn:hover {
   cursor: pointer;
-  transform: scale(1.88) translateY(20px) translateX(15px);
+  transform: scale(1.2) translateY(1vw) translateX(15px);
 }
 
 .sub-btn:hover {
@@ -217,8 +204,9 @@ body {
 }
 
 .kontakt-li {
-  margin-top: 25px;
+  margin-top: 1.4vw;
   font-family: DoppioOne;
+  font-size: 1.3vw;
 }
 
 .contact-stay {
@@ -320,6 +308,10 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.p-text a:hover{
+  cursor: pointer;
+} 
 
 .footer {
   height: 250px;
