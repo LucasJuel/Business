@@ -41,14 +41,12 @@ a {
 }
 
 .fullCol:nth-child(2) {
-  background-color: #008080;
   transform: rotate(-8deg) scaleX(1.1) scaleY(0.6) translateY(-8.75vw);
   position: relative;
   z-index: -10;
 }
 
 .fullCol:nth-child(3) {
-  background-color: #008080;
   transform: rotate(3deg) scaleX(1.1) scaleY(0.6) translateY(8.75vw);
   position: relative;
   z-index: -10;
