@@ -2,7 +2,7 @@
 include './db_connection.php';
 $conn = OpenCon();
 
-echo 'Tak for registreringen ', $_POST['surname'];
+echo 'Tak for registreringen ', $_POST['name'];
 
 $navn = $_POST['name'];
 $efternavn = $_POST['surname'];
@@ -14,7 +14,7 @@ $desc = $_POST['desc'];
 
 $besked = "Der er en ny henvendelse fra $navn $efternavn\n Information:\n Telefon: $tel\n Mail: $mail\n CVR-nummer: $cvr\n Pakke: $pakke\n Og har inkluderet beskeden: $desc";
 
-mail('pernille.sjostrom@gmail.com', 'Ny henvendelse nr: *indsæt senere*', $besked);
+mail('lucas.juel.sjostrom@gmail.com', 'Ny henvendelse nr: *indsæt senere*', $besked);
 
 CloseCon($conn);
 ?>

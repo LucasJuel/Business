@@ -121,9 +121,18 @@ body {
 
 .gram-text {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.6;
   width: 600px;
+}
+
+.about-box ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.about-box ul li {
+  font-size: 16px;
+  font-family: DoppioOne;
 }
 
 .gram-box {
@@ -132,7 +141,7 @@ body {
   position: absolute;
   margin-left: 14vw;
   top: 700px;
-  height: 310px;
+  height: 370px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
@@ -150,7 +159,7 @@ body {
   width: 700px;
   position: absolute;
   top: 1800px;
-  height: 310px;
+  height: 360px;
   padding: 20px;
   transform: translateX(200px);
   border-radius: 10px;
@@ -161,12 +170,12 @@ body {
 
 .about-box {
   background-color: white;
-  width: 700px;
+  width: 760px;
   position: absolute;
   top: 2000px;
   height: 310px;
   padding: 20px;
-  transform: translateX(800px);
+  transform: translateX(900px);
   border-radius: 10px;
   box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 11px 15px 41px -4px rgba(0, 0, 0, 0.75);
@@ -174,9 +183,8 @@ body {
 }
 
 .p-text {
-  font-size: 16px;
-  font-family: DoppioOne;
-  text-transform: uppercase;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -192,7 +200,7 @@ body {
 .gram-btn {
   border: solid 2px #008080;
   border-radius: 7px;
-  transform: scale(1.8) translateY(40px) translateX(15px);
+  transform: scale(1.8) translateY(20px) translateX(15px);
   color: black;
   background-color: white;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -201,7 +209,7 @@ body {
 
 .gram-btn:hover {
   cursor: pointer;
-  transform: scale(1.88) translateY(40px) translateX(15px);
+  transform: scale(1.88) translateY(20px) translateX(15px);
 }
 
 .sub-btn:hover {

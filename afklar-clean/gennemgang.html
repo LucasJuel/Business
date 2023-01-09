@@ -17,7 +17,7 @@
     <div class="header">
       <div class="header-box">
         <a href="index.html" class="p-header">Hjem</a>
-        <p class="p-header">Om mig</p>
+        <a class="p-header" href="about-me.html">Om mig</a>
         <a class="p-header" onClick="changeSite()">Kontakt mig</a>
         <div class="dropdown">
           <div class="drop-text">
@@ -112,30 +112,25 @@
           </div>
           <div class="surname wrapper">
             <label for="">Efternavn</label>
-            <input type="text" placeholder="Hansen" />
+            <input type="text" placeholder="Hansen" name="surname"/>
           </div>
         </div>
 
         <div class="wrap-detail">
           <div class="phone wrapper">
             <label for="">Telefon</label>
-            <input type="tel" placeholder="Telefon nummer" pattern="[0-9]{8}" />
+            <input type="tel" placeholder="Telefon nummer" name="phone" pattern="[0-9]{8}" />
           </div>
 
           <div class="email wrapper">
             <label for="">Email</label>
-            <input type="email" placeholder="ditnavn@dinemail.dk" />
+            <input type="email" name="mail" placeholder="ditnavn@dinemail.dk" />
           </div>
         </div>
-
-        <div class="wrap-info">
-          
-        </div>
-
         <div class="desc wrapper">
           <label for="">Beskrivelse</label>
-          <input type="number" placeholder="CVR-Nummer" style="margin: 18px 0 18px 0">
-          <select id="pakke" form="request" >
+          <input type="number" placeholder="CVR-Nummer" name="cvr"style="margin: 18px 0 18px 0">
+          <select id="pakke" form="request" name="pakke">
             <option value="" disabled selected hidden>Vælg en pakke!</option>
             <option value="Gennemgang">Gennemgang</option>
             <option value="Gennemgang+Revision">Gennemgang og Revision</option>
@@ -147,10 +142,10 @@
             cols="100"
             rows="10"
             class="desc-input"
-            
+            name="desc"
           ></textarea>
-        <button class="wrapper knap">Send</button>
         </div>
+        <button class="wrapper knap">Send</button>
       </form>
     </div>
 
@@ -182,7 +177,7 @@
         <br>
         <div class="social-icons">
           <i class="fa-brands fa-linkedin-in fa-lg" onclick="changeTo('https://www.linkedin.com/in/pernille-sj%C3%B8str%C3%B8m-a9723430/')"></i>
-          <i class="fa-brands fa-square-facebook fa-lg"></i>
+          <i class="fa-brands fa-square-facebook fa-lg" onclick="changeTo('https://www.facebook.com/profile.php?id=100088980595142')"></i>
         </div>
      </div>
     </footer>
