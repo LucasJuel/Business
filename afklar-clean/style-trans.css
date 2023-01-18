@@ -146,9 +146,9 @@ body {
 /*2 bokse øverst*/
 .gram-text {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1vw;
+  font-size: 1em;
   line-height: 1.6;
-  width: calc(100% - 50px);
+  width: fit-content;
 }
 
 .bull-point{
@@ -164,6 +164,7 @@ body {
     position: absolute;
     top: 40vw;
     width: 60vw;
+
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -191,8 +192,8 @@ body {
   position: absolute;
   top: 102vw;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 7vw;
+  grid-template-columns: repeat(3 , minmax(20%, 1fr));
+  column-gap: 4vw;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -373,60 +374,4 @@ div.email.wrapper{
 
 .social-icons i:hover{
   cursor: pointer;
-}
-
-@media (max-width: 900px) {
-  .h1-text{
-    viewport-fit: contain;
-  }
-
-
-
-  .title{
-    font-size: 4vw;
-  }
-
-  .gram-text{
-    font-size: 3vw;
-  }
-
-  .gram-box{
-    height: 60vw;
-  }
-
-  .gram-pack{
-    width: 100%;
-  }
-
-  .trans-info{
-    display: inline-block;
-    width: 100%;
-  }
-  .info-obj{
-    margin-bottom: -8px;
-    height: 40vh;
-    width: 100%;
-    transform: rotate(0) !important;
-    overflow: hidden;
-  }
-  .info-obj .gram-text{
-    font-size: 3.2vw
-  }
-
-  .header-mobile{
-    margin-top: 8px;
-    text-align: center;
-  }
-
-  .menu-icon{
-    size: 50px;
-    transition: 0.4s;
-  
-  }
-
-  .menu-icon:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-
 }
