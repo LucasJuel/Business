@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style-index.css">
+    <script src="https://kit.fontawesome.com/429e30093e.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-box">
+        <p class="p-header" onClick="aboutMe()">Om mig</p>
+        <a class="p-header" onClick="scrollInto()">Kontakt mig</a>
+        <div class="dropdown">
+          <div class="drop-text">
+            <button class="dropbtn">Services</button>
+            <i class="fa fa-chevron-down"></i>
+          </div>
+          <div class="dropdown-content">
+            <a href="gennemgang.html">Gennemgang af tekst</a>
+            <a href="transkribering.html" hidden="true">Transkribering</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="fullCol"></div>
+      <div class="fullCol"></div>
+      <div class="fullCol"></div>
+      <h1 class="h1-text">Velkommen til Afklar</h1>
+      <p class="p-text">
+        Hjemmesiden er under opbygning, så servicesesne er ikke tilgængelige lige nu :) <br>
+        Har du brug for at få læst korrektur på en tekst, få skrevet et opslag til Facebook, få lavet undertekster til en
+video til YouTube eller noget helt andet sprogligt, så er du havnet det helt rigtige sted. Jeg vil nemlig rigtig
+gerne hjælpe dig. <br><br>
+Alt du skal gøre er at kontakte mig på mail eller på telefon eller udfylde <a style="text-decoration: underline;" onclick="formula()">den her kontaktformular</a> og skrive
+lidt om dit projekt, så vender jeg tilbage til dig.
+      </p>
+    </div>
+
+    <div class="gram-proof">
+      <div class="gram-box">
+        <h1 class="gram title">Transkribering</h1>
+        <div
+        style="background-color: #008080; width: 20vw; height: 0.8vw"
+        ></div>
+        <p class="gram-text">
+Transskribering går ud på, at jeg laver din lydfil om til skrift og sender det til dig i et dokument.<br><br>
+Det kan være, at du har optaget et interview med en person, som du har brug for at få skrevet ned, eller du
+har planer om at lægge en video på din Facebook-side men bare mangler underteksterne.<br><br>
+Her kan jeg hjælpe dig hurtigt og nemt.
+        </p>
+        <button class="gram-btn" onClick="location.href='transkribering.html'">
+          Læs mere
+        </button>
+      </div>
+      <div class="gram-box">
+        <h1 class="gram title">Gennemgang af tekst</h1>
+        <div
+          style="background-color: #008080; width: 20vw; height: 0.8vw"
+        ></div>
+        <p class="gram-text">
+          Jeg gennemgår din tekst for dig og retter, forbedrer eller korrigerer afhængig af, hvad vi aftaler, og hvad du
+har behov for. <br><br>
+Det kan også være, at du har brug for forslag til alternative formuleringer eller måske for en
+gennemlæsning, så gentagelser eller manglende uddybning bliver synlige for dig.<br><br>
+Under alle omstændigheder - du betaler aldrig for mere, end det vi har aftalt.
+        </p>
+        <button class="gram-btn" onClick="location.href='gennemgang.html'">
+          Læs mere
+        </button>
+      </div>
+    </div>
+    <div class="contact-stay" id="contact-stay">
+      <div
+        style="
+          width: 100%;
+          height: 10px;
+          background-color: #ec6e00;
+          border-radius: 5px 5px 0px 0px;
+        "
+        onClick="toggle()"
+      ></div>
+      <div style="margin-bottom: 20px">Nyhedsbrev!</div>
+      <form method="POST" action="./php/news_letter.php"> 
+      	<input style="width: 80%" placeholder="nyhedsbrev" name="mail"/>
+      	<button>Send</button>
+      </form>
+    </div>
+
+    <!--Kontakt mig felt-->
+    <div class="kontakt-proof">
+      <div class="kontakt-box" id="scroll-to">
+        <h1 class="kontakt title">Kontakt mig</h1>
+        <div
+        style="background-color: #008080; width: 20vw; height: 0.8vw"
+        ></div>
+        <!-- <p class="gram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus cras adipiscing enim eu turpis egestas pretium aenean.</p> -->
+        <p class="gram-text">
+          Hvis du har et projekt eller en opgave – stor eller lille, så tag endelig kontakt til mig. <br><br>
+Jeg kan være svær at fange på telefonen, men du er velkommen til at prøve. Hvis jeg ikke svarer, så læg
+endelig en besked på telefonsvareren. <br><br>
+Du kan også skrive en mail til mig, eller sende mig en SMS, så vender jeg tilbage til dig, så snart jeg har et
+ledigt øjeblik.
+        </p>
+        <ul class="kontakt-ul">
+          <li class="kontakt-li">E-mail</li>
+          <li class="kontakt-li">Telefon</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Om mig felt-->
+    <div class="kontakt-proof">
+      <div class="about-box">
+        <h1 class="kontakt title">Om afklar.dk</h1>
+        <div
+        style="background-color: #008080; width: 20vw; height: 0.8vw"
+        ></div>
+        <p class="gram-text">
+          Afklar er den samarbejdspartner, du skal bruge
+          <ul>
+            <li><strong>INDEN</strong> du sender din restaurants spritnye menukort til tryk</li>
+            <li><strong>INDEN</strong> du sender din 10- eller 70-siders projektopgave til dit uddannelsessted og censor</li>
+            <li><strong>INDEN</strong> du udgiver den nye tekst på din hjemmeside, som du har forfattet med møje og besvær</li>
+            <li><strong>INDEN</strong> du sender annoncen for din virksomhed til avisen</li>
+          </ul>
+        </p>
+        <button class="gram-btn" onclick="location.href='about-me.html'">Læs mere</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-div">
+        <h3 style="font-family: DoppioOne">Sider</h3>
+        <li><a href="gennemgang.html">Gennemgang af tekst</a></li>
+        <li><a href="transkribering.html">Transkribering</a></li>
+        <li><a href="#">Om afklar.dk</a></li>
+      </div>
+      <div class="footer-div">
+        <h3 style="font-family: DoppioOne">Artikler</h3>
+        <li><a href="#">Artikel 1</a></li>
+        <li><a href="#">Artikel 2</a></li>
+        <li><a href="#">Artikel 3</a></li>
+      </div>
+      <div class="footer-div conds">
+        <h3 style="font-family: DoppioOne">Betingelser</h3>
+        <p>All rights reserved. Afklar.dk ©</p>
+        <p>CVR-nr:</p>
+        <a>Handelsbetingelser</a>
+        <a>Persondatapolitik</a>
+        <a>Cookiespolitik</a>
+      </div>
+      <div class="footer-div">
+        <h3 style="font-family: DoppioOne">Kontakt</h3>
+        <li><a href="#">Send en e-mail!</a></li>
+        <li><a href="#">Telefon: **********</a></li>
+        <br>
+        <div class="social-icons">
+          <i class="fa-brands fa-linkedin-in fa-lg" onclick="changeTo('https://www.linkedin.com/in/pernille-sj%C3%B8str%C3%B8m-a9723430/')"></i>
+          <i class="fa-brands fa-square-facebook fa-lg" onclick="changeTo('https://www.facebook.com/profile.php?id=100088980595142')"></i>
+        </div>
+     </div>
+    </footer>
+  </body>
+</html>

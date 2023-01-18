@@ -67,7 +67,7 @@ body {
 
 .body {
   overflow: hidden;
-  height: 200vw;
+  height: 205vw;
 }
 
 .h1-text {
@@ -151,6 +151,15 @@ body {
   width: calc(100% - 50px);
 }
 
+.bull-point{
+  font-size: 1.4vw;
+  line-height: 1.6;
+}
+
+.text-ex{
+  font-size: 1.4vw;
+}
+
 .gram-pack{
     position: absolute;
     top: 40vw;
@@ -189,7 +198,7 @@ body {
 }
 
 .info-obj{
-  height: 30vw;
+  height: fit-content;
   width: 20vw;
   background-color: white;
   padding: 18px;
@@ -227,12 +236,14 @@ body {
 .send-mail {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0);
-  top: 140vw;
+  transform: translate(-50%, 10vw);
+  top: 150vw;
 }
 
 .wrapper {
   font-family: DoppioOne;
+  font-size: 1vw;
+  width: auto;
   padding: 20px;
   margin: 9px;
   border-radius: 10px;
@@ -252,20 +263,13 @@ body {
   float: left;
 }
 
-.surname.wrapper{
-  width: 250px;
-}
 
 .phone {
   float: left;
 }
 
-.email {
-  width: 350px;
-}
-
 .email input{
-  width: 250px;
+  width: 14vw;
 }
 
 .wrapper label{
@@ -277,21 +281,14 @@ div.email.wrapper{
   align-items: center;
 }
 
-.wrap-names div {
-  width: 250px;
-}
-
-.phone.wrapper{
-  width: 250px;
-}
 
 .wrapper label {
-  margin-right: 18px;
+  margin-right: 1vw;
 }
 
 .wrapper input {
-  margin-top: 18px;
-  margin-right: 18px;
+  margin-top: 1vw;
+  margin-right: 1vw;
 }
 
 .wrap-detail {
@@ -301,7 +298,7 @@ div.email.wrapper{
 
 .desc {
   float: left;
-  margin-right: 18px
+  margin-right: 1vw;
 }
 
 .desc.wrapper label {
@@ -309,7 +306,7 @@ div.email.wrapper{
 }
 
 .desc textarea {
-  margin-top: 10px;
+  margin-top: 1vw;
 }
 
 .wrapper.knap{
@@ -324,17 +321,6 @@ div.email.wrapper{
 
 /*Footer*/
 .footer {
-  height: 200px;
-  background-color: #ec6e00;
-  padding-top: 50px;
-  box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
-  -webkit-box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
-  -moz-box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100%;
-}
-.footer {
   height: 250px;
   background-color: #ec6e00;
   padding-top: 50px;
@@ -343,6 +329,7 @@ div.email.wrapper{
   -moz-box-shadow: 0px 25px 36px -22px rgba(0, 0, 0, 0.91) inset;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  transform: translateY(100px);
 }
 
 .footer-div {
