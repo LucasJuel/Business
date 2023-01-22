@@ -17,27 +17,29 @@
       integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/custom-style.css"/>
+    <link rel="stylesheet" href="/custom-style.css" />
     <script
       src="https://kit.fontawesome.com/429e30093e.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <style>
-      
-    </style>
+    <style></style>
 
-    <div class="container-fluid position-absolute overflow-hidden">
+    <div
+      class="container-fluid position-absolute overflow-hidden"
+      style="z-index: -100"
+    >
       <div class="fullCol"></div>
       <div class="fullCol"></div>
       <div class="fullCol"></div>
       <div class="fullCol"></div>
     </div>
 
-    <div class="container sticky-top">
-      <div class="row mt-4 justify-content-center font-change text-uppercase">
-        <div class="col-12 col-lg-2 text-center header-element">
+    <div class="container">
+      <!--Til fuldskærm-->
+      <div class="row font-change text-uppercase mt-4 justify-content-center">
+        <div class="col-2 text-center header-element d-none d-md-block">
           <a
             href="/gennemgang.html"
             class="link-dark pe-auto"
@@ -45,8 +47,7 @@
             >Om mig</a
           >
         </div>
-        <hr class="hr d-lg-none" />
-        <div class="col-12 col-lg-2 text-center header-element">
+        <div class="col-2 text-center header-element d-none d-md-block">
           <a
             href="/gennemgang.html"
             class="link-dark pe-auto"
@@ -54,33 +55,14 @@
             >Kontakt mig</a
           >
         </div>
-        <hr class="hr d-lg-none"/>
-
-      <div class="row justify-content-around font-change text-uppercase d-lg-none">
-        <div class="col-md-2 col-sm-12 text-center header-element ">
-          <a
-            href="/gennemgang.html"
-            class="link-dark pe-auto"
-            style="text-decoration: none"
-            >Transkribering</a
-          >
-        </div>
-        <div class="col-md-2 col-sm-12 text-center header-element">
-          <a
-            href="/gennemgang.html"
-            class="link-dark pe-auto"
-            style="text-decoration: none"
-            >Gennemgang</a
-          >
-        </div>
-      </div>
         <div
-          class="col-12 col-md-2 text-center header-element hover-me dropdown d-none d-lg-block"
+          class="col-2 text-center header-element hover-me dropdown d-none d-md-block"
         >
           <a
             href="#"
-            class="link-dark pe-auto "
+            class="link-dark pe-auto"
             style="text-decoration: none"
+            id="dropdownMenuButton"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -89,11 +71,162 @@
               style="margin-left: 10px"
             ></i>
           </a>
-          <ul class="dropdown-menu animate slideIn">
+          <ul
+            class="dropdown-menu animate slideIn"
+            aria-labelledby="dropdownMenuButton"
+            style="z-index: 10"
+          >
             <li><a class="dropdown-item small" href="#">Action</a></li>
             <div class="dropdown-divider"></div>
-            <li><a class="dropdown-item small" href="#">Another action</a></li>
+            <li>
+              <a class="dropdown-item small" href="#">Another action</a>
+            </li>
           </ul>
+        </div>
+      </div>
+      <hr class="hr hr-blurry mt-3 d-none d-md-block" style="z-index: -100" />
+
+      <!--Til mobile-->
+      <div
+        class="d-flex flex-row font-change align-items-center justify-content-evenly d-md-none text-uppercase"
+      >
+        <div class="col-2 align-self-start">
+          <img
+            class="rounded"
+            src="./letter-a-logo-flat-icon-style-vector-4925239.jpg"
+            alt=""
+            style="height: 50px"
+          />
+        </div>
+        <div class="col-1">
+          <a class="pe-auto h6 small" style="text-decoration: none">Om</a>
+        </div>
+        <div class="col-2">
+          <a class="pe-auto h6 small" style="text-decoration: none">Kontakt</a>
+        </div>
+        <div class="col-2">
+          <a class="pe-auto h6 small" style="text-decoration: none">Services</a>
+        </div>
+        <div class="hr"></div>
+      </div>
+      <hr class="hr d-md-none"/>
+    </div>
+
+    <!--Divider-->
+    <div class="container">
+      <div class="row my-5"></div>
+      <div class="row my-lg-5"></div>
+      <div class="row my-lg-5"></div>
+      <div class="row my-lg-3"></div>
+    </div>
+
+    <!--Titel og undertekst-->
+    <div class="container">
+      <div
+        class="row display-4 text-black font-change text-uppercase"
+        style="letter-spacing: 6px; z-index: 10"
+      >
+        <div class="col-12 text-center">Velkommen til afklar</div>
+      </div>
+      <div class="row my-4"></div>
+      <div class="row justify-content-center">
+        <div class="col-8 text-black small d-md-none">
+          <p>
+            Har du brug for at få læst korrektur på en tekst, få skrevet et
+            opslag til Facebook, få lavet undertekster til en video til YouTube
+            eller noget helt andet sprogligt, så er du havnet det helt rigtige
+            sted. Jeg vil nemlig rigtig gerne hjælpe dig.<br /><br />
+
+            Alt du skal gøre er at kontakte mig på mail eller på telefon eller
+            udfylde den her kontaktformular og skrive lidt om dit projekt, så
+            vender jeg tilbage til dig.
+          </p>
+        </div>
+        <div class="col-8 text-center text-black medium d-none d-md-block">
+          <p>
+            Har du brug for at få læst korrektur på en tekst, få skrevet et
+            opslag til Facebook, få lavet undertekster til en video til YouTube
+            eller noget helt andet sprogligt, så er du havnet det helt rigtige
+            sted. Jeg vil nemlig rigtig gerne hjælpe dig.<br /><br />
+
+            Alt du skal gøre er at kontakte mig på mail eller på telefon eller
+            udfylde den her kontaktformular og skrive lidt om dit projekt, så
+            vender jeg tilbage til dig.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Divider-->
+    <div class="container">
+      <div class="row my-5"></div>
+      <div class="row my-lg-5"></div>
+      <div class="row my-lg-5"></div>
+      <div class="row my-lg-3"></div>
+    </div>
+
+    <!--Pakker Desktop-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 whiteboard p-5 d-none d-md-block">
+          <h1 class="font-change">Transkribering</h1>
+          <p>
+            Transskribering går ud på, at jeg laver din lydfil om til skrift og
+            sender det til dig i et dokument.<br /><br />
+
+            Det kan være, at du har optaget et interview med en person, som du
+            har brug for at få skrevet ned, eller du har planer om at lægge en
+            video på din Facebook-side men bare mangler underteksterne.<br /><br />
+
+            Her kan jeg hjælpe dig hurtigt og nemt.
+          </p>
+        </div>
+        <div class="col-lg-6 whiteboard p-5 d-none d-md-block">
+          <h1 class="font-change">Gennemgang</h1>
+          <p>
+            Jeg gennemgår din tekst for dig og retter, forbedrer eller
+            korrigerer afhængig af, hvad vi aftaler, og hvad du har behov
+            for.<br /><br />
+
+            Det kan også være, at du har brug for forslag til alternative
+            formuleringer eller måske for en gennemlæsning, så gentagelser eller
+            manglende uddybning bliver synlige for dig.<br /><br />
+
+            Under alle omstændigheder - du betaler aldrig for mere, end det vi
+            har aftalt.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Pakker Mobile-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="whiteboard-mobile col-12 d-md-none p-5">
+          <h1 class="font-change title-color">Transkribering</h1>
+          <p>
+            Transskribering går ud på, at jeg laver din lydfil om til skrift og
+            sender det til dig i et dokument.<br /><br />
+
+            Det kan være, at du har optaget et interview med en person, som du
+            har brug for at få skrevet ned, eller du har planer om at lægge en
+            video på din Facebook-side men bare mangler underteksterne.<br /><br />
+
+            Her kan jeg hjælpe dig hurtigt og nemt.
+          </p>
+          <hr class="my-5">
+          <h1 class="font-change title-color">Gennemgang af tekst</h1>
+          <p>
+            Jeg gennemgår din tekst for dig og retter, forbedrer eller
+            korrigerer afhængig af, hvad vi aftaler, og hvad du har behov
+            for.<br /><br />
+
+            Det kan også være, at du har brug for forslag til alternative
+            formuleringer eller måske for en gennemlæsning, så gentagelser eller
+            manglende uddybning bliver synlige for dig.<br /><br />
+
+            Under alle omstændigheder - du betaler aldrig for mere, end det vi
+            har aftalt.
+          </p>
         </div>
       </div>
     </div>
