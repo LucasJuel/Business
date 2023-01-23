@@ -23,7 +23,7 @@
     z-index: -10;
   }
   .fullCol:nth-child(4) {
-    transform: rotate(2deg) scaleX(1.1) translateY(650px);
+    transform: rotate(-2deg) scaleX(1.1) translateY(750px);
     z-index: -10;
   }
 
@@ -87,6 +87,24 @@
   .whiteboard:nth-child(2){
     transform: rotate(-4deg) translateY(30%);
   }
+
+  .info .whiteboard:nth-child(1){
+    transform: rotate(0);
+  }
+  .info .whiteboard:nth-child(2){
+    transform: rotate(0) translateY(30%);
+  }
+
+  .btn-anim{
+    transform: scale(1.1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.3s;
+    border-width: 2px;
+  }
+  .btn-anim:hover{
+    transform: scale(1.2);
+  }
+  
 
   /*---Fonts---*/
   @font-face {
